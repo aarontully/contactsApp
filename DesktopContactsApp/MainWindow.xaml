@@ -7,6 +7,9 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-
+        <StackPanel Margin="10">
+            <Button Content="New Contact"
+                    Click="Button_Click"/>
+        </StackPanel>
     </Grid>
 </Window>
