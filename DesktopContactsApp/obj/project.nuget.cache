@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "I7uApxFMkZO6svZMrLjty5f4KqomwkWhaY/gBiJTcB5cy8+NFWhQOBWv+Ty5KU2FC9Fygw5xvBUy/TeEWUKbVw==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\tullya\\OneDrive\\WPF Masterclass\\DesktopContactsApp\\DesktopContactsApp\\DesktopContactsApp.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\tullya\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\3.1.13\\microsoft.netcore.app.host.win-x64.3.1.13.nupkg.sha512"
+  ],
+  "logs": []
+}
