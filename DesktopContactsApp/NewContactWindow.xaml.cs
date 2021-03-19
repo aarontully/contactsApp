@@ -9,12 +9,11 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using DesktopContactsApp.Classes;
+using SQLite;
 
 namespace DesktopContactsApp
-{
-    /// <summary>
-    /// Interaction logic for NewContactWindow.xaml
-    /// </summary>
+{ 
     public partial class NewContactWindow : Window
     {
         public NewContactWindow()
@@ -24,7 +23,23 @@ namespace DesktopContactsApp
 
         private void saveButton_Click(object sender, RoutedEventArgs e)
         {
-            //todo: save contact
+            Contact contact = new Contact()
+            {
+                Name = nameTextBox.Text,
+                Email = emailTextBox.Text,
+                Phone = phoneTextBox.Text
+            };
+
+            string databaseName = "Contacts.db";
+            string folderPath = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments);
+            string databasePath = System.IO.Path.Combine(folderPath, databaseName);
+
+            using (SQLiteConnection connection = new SQLiteConnection(databasePath))
+            {
+                connection.CreateTable<Contact>();
+                connection.Insert(contact);
+            };
+            
             Close();
         }
     }
