@@ -23,12 +23,31 @@ namespace DesktopContactsApp
         public MainWindow()
         {
             InitializeComponent();
+
+            readDatabase();
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
             NewContactWindow newContactWindow = new NewContactWindow();
             newContactWindow.ShowDialog();
+
+            readDatabase();
+        }
+
+        void readDatabase()
+        {
+            List<Classes.Contact> contacts;
+            using (SQLite.SQLiteConnection conn = new SQLite.SQLiteConnection(App.databasePath))
+            {
+                conn.CreateTable<Classes.Contact>();
+                contacts = conn.Table<Classes.Contact>().ToList();
+            }
+
+            if(contacts != null)
+            {
+                contactsListView.ItemsSource = contacts;
+            }
         }
     }
 }
