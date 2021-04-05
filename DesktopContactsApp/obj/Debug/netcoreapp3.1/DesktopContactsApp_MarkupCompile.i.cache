@@ -10,11 +10,11 @@ none
 false
 TRACE;DEBUG;NETCOREAPP;NETCOREAPP3_1;
 C:\Users\tullya\OneDrive\WPF Masterclass\DesktopContactsApp\DesktopContactsApp\App.xaml
-2-1772605110
+3-1961996713
 
-7-1410894968
+8-143921652
 197-1293918026
-MainWindow.xaml;NewContactWindow.xaml;
+ContactDetailsWindow.xaml;MainWindow.xaml;NewContactWindow.xaml;
 
-True
+False
 

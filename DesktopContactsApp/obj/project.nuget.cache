@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "93FZI17r38F16eU/hieuaTBJsrUrtcZXBlwuX/B+mztTANYDS3rAVD8r/yAwmkd2g74r2iJHwr8xkv36BNi6Aw==",
+  "dgSpecHash": "vDKyI4cTdTXoFRpdBHywfqeH2WdYrjOCOqYHAKaAZsmrM/h7+TgOtJ/wC8YgxqPuPLqql0Uf41t6lWB9VI7a8Q==",
   "success": true,
   "projectFilePath": "C:\\Users\\tullya\\OneDrive\\WPF Masterclass\\DesktopContactsApp\\DesktopContactsApp\\DesktopContactsApp.csproj",
   "expectedPackageFiles": [
@@ -9,8 +9,7 @@
     "C:\\Users\\tullya\\.nuget\\packages\\sqlitepclraw.core\\2.0.3\\sqlitepclraw.core.2.0.3.nupkg.sha512",
     "C:\\Users\\tullya\\.nuget\\packages\\sqlitepclraw.lib.e_sqlite3\\2.0.3\\sqlitepclraw.lib.e_sqlite3.2.0.3.nupkg.sha512",
     "C:\\Users\\tullya\\.nuget\\packages\\sqlitepclraw.provider.dynamic_cdecl\\2.0.3\\sqlitepclraw.provider.dynamic_cdecl.2.0.3.nupkg.sha512",
-    "C:\\Users\\tullya\\.nuget\\packages\\system.memory\\4.5.3\\system.memory.4.5.3.nupkg.sha512",
-    "C:\\Users\\tullya\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\3.1.13\\microsoft.netcore.app.host.win-x64.3.1.13.nupkg.sha512"
+    "C:\\Users\\tullya\\.nuget\\packages\\system.memory\\4.5.3\\system.memory.4.5.3.nupkg.sha512"
   ],
   "logs": []
 }

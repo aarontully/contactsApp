@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using DesktopContactsApp.Classes;
 
 namespace DesktopContactsApp
 {
@@ -20,12 +21,12 @@ namespace DesktopContactsApp
     /// </summary>
     public partial class MainWindow : Window
     {
-        List<Classes.Contact> contacts;
+        List<Contact> contacts;
         public MainWindow()
         {
             InitializeComponent();
 
-            contacts = new List<Classes.Contact>();
+            contacts = new List<Contact>();
 
             readDatabase();
         }
@@ -42,8 +43,8 @@ namespace DesktopContactsApp
         {
             using (SQLite.SQLiteConnection conn = new SQLite.SQLiteConnection(App.databasePath))
             {
-                conn.CreateTable<Classes.Contact>();
-                contacts = conn.Table<Classes.Contact>().ToList();
+                conn.CreateTable<Contact>();
+                contacts = (conn.Table<Contact>().ToList()).OrderBy(c => c.Name).ToList();
             }
 
             if(contacts != null)
@@ -54,11 +55,29 @@ namespace DesktopContactsApp
 
         private void TextBox_TextChanged(object sender, TextChangedEventArgs e)
         {
-            TextBox serchTextBox = sender as TextBox;
+            TextBox searchTextBox = sender as TextBox;
 
-            var filteredList = contacts.Where(c => c.Name.ToLower().Contains(serchTextBox.Text.ToLower())).ToList();
+            var filteredList = contacts.Where(c => c.Name.ToLower().Contains(searchTextBox.Text.ToLower())).ToList();
+
+            //var filteredList2 = (from c2 in contacts
+            //                    where c2.Name.ToLower().Contains(searchTextBox.Text.ToLower())
+            //                    orderby c2.Email
+            //                    select c2).ToList();
 
             contactsListView.ItemsSource = filteredList;
+        }
+
+        private void contactsListView_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            Contact selectedContact = (Contact)contactsListView.SelectedItem;
+
+            if(selectedContact != null)
+            {
+                ContactDetailsWindow contactDetailsWindow = new ContactDetailsWindow(selectedContact);
+                contactDetailsWindow.ShowDialog();
+
+                readDatabase();
+            }
         }
     }
 }
