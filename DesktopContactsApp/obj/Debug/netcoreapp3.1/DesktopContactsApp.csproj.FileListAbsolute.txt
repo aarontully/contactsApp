@@ -78,3 +78,6 @@ C:\Users\tullya\OneDrive\WPF Masterclass\DesktopContactsApp\DesktopContactsApp\b
 C:\Users\tullya\OneDrive\WPF Masterclass\DesktopContactsApp\DesktopContactsApp\obj\Debug\netcoreapp3.1\DesktopContactsApp.csproj.CopyComplete
 C:\Users\tullya\OneDrive\WPF Masterclass\DesktopContactsApp\DesktopContactsApp\obj\Debug\netcoreapp3.1\ContactDetailsWindow.g.cs
 C:\Users\tullya\OneDrive\WPF Masterclass\DesktopContactsApp\DesktopContactsApp\obj\Debug\netcoreapp3.1\ContactDetailsWindow.baml
+C:\Users\tullya\OneDrive\WPF Masterclass\DesktopContactsApp\DesktopContactsApp\obj\Debug\netcoreapp3.1\Controls\ContactControl.g.cs
+C:\Users\tullya\OneDrive\WPF Masterclass\DesktopContactsApp\DesktopContactsApp\obj\Debug\netcoreapp3.1\GeneratedInternalTypeHelper.g.cs
+C:\Users\tullya\OneDrive\WPF Masterclass\DesktopContactsApp\DesktopContactsApp\obj\Debug\netcoreapp3.1\Controls\ContactControl.baml

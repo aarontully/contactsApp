@@ -10,11 +10,11 @@ none
 false
 TRACE;DEBUG;NETCOREAPP;NETCOREAPP3_1;
 C:\Users\tullya\OneDrive\WPF Masterclass\DesktopContactsApp\DesktopContactsApp\App.xaml
-3-1961996713
+4-993155439
 
-6272322217
+7998604536
 197-1293918026
-ContactDetailsWindow.xaml;MainWindow.xaml;NewContactWindow.xaml;
+ContactDetailsWindow.xaml;Controls\ContactControl.xaml;MainWindow.xaml;NewContactWindow.xaml;
 
 False
 
